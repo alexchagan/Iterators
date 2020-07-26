@@ -50,8 +50,8 @@ namespace itertools {
             } //prefix ++
         };
 
-        auto begin(){ iterator i(_iter, _func); return i.begin()}
-        auto end(){iterator i(_iter, _func); return i.end()}
+        auto begin(){return iterator(_iter, _func);}
+        auto end(){return iterator(_iter, _func);}
 
     };
 }
