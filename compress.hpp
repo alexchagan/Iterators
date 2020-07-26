@@ -14,7 +14,7 @@ namespace itertools {
         Iter & _iter; //We don't want to duplicate the container.
         vector<bool> & _filter;
         decltype((_iter.begin())) _beg;//decltype uses to deduce runtime type of an object
-        decltype((_iter.begin())) _end_iter;
+        decltype((_iter.end())) _end_iter;
 
     public:
         //l-value ctor
